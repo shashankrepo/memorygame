@@ -1,0 +1,30 @@
+.container {
+  margin-top: 2rem;
+  h3 {
+    text-align: center;
+  }
+  .wrapper {
+    width: 42rem;
+    display: flex;
+    justify-content: space-evenly;
+    background: #dfbbb1;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    %player,
+    .player {
+      height: 4rem;
+      width: 12rem;
+      border: 3px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      transition: all 0.3s ease;
+    }
+
+    .activePlayer {
+      @extend %player;
+      background-color: #ffbf69;
+      border: 3px solid #2ec4b6;
+    }
+  }
+}
